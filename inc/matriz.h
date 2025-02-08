@@ -42,40 +42,40 @@ void desenho_pio(bool *desenho, uint32_t valor_led, PIO pio, uint sm, double r, 
     }
 }
 
-void imprime_numeros(uint index, PIO pio, uint sm)
+void imprime_numeros(char index, PIO pio, uint sm)
 {
     uint valor_led;
 
     switch (index)
     {
-    case 0:
+    case '0':
         desenho_pio(numero_0, valor_led, pio, sm, 0.0, 0.0, 0.1);
         break;
-    case 1:
+    case '1':
         desenho_pio(numero_1, valor_led, pio, sm, 0.0, 0.0, 0.1);
         break;
-    case 2:
+    case '2':
         desenho_pio(numero_2, valor_led, pio, sm, 0.0, 0.0, 0.1);
         break;
-    case 3:
+    case '3':
         desenho_pio(numero_3, valor_led, pio, sm, 0.0, 0.0, 0.1);
         break;
-    case 4:
+    case'4':
         desenho_pio(numero_4, valor_led, pio, sm, 0.0, 0.0, 0.1);
         break;
-    case 5:
+    case '5':
         desenho_pio(numero_5, valor_led, pio, sm, 0.0, 0.0, 0.1);
         break;
-    case 6:
+    case '6':
         desenho_pio(numero_6, valor_led, pio, sm, 0.0, 0.0, 0.1);
         break;
-    case 7:
+    case '7':
         desenho_pio(numero_7, valor_led, pio, sm, 0.0, 0.0, 0.1);
         break;
-    case 8:
+    case '8':
         desenho_pio(numero_8, valor_led, pio, sm, 0.0, 0.0, 0.1);
         break;
-    case 9:
+    case '9':
         desenho_pio(numero_9, valor_led, pio, sm, 0.0, 0.0, 0.1);
         break;
     }

@@ -59,6 +59,8 @@ target_sources(display PRIVATE display.c)
 target_link_libraries(display 
         hardware_i2c
         hardware_pio
+        hardware_irq
+        hardware_uart
         )
 
 pico_add_extra_outputs(display)
