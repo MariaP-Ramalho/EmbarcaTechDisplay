@@ -42,6 +42,8 @@ int main()
   init_hardware();
   alterar_display();
 
+  desenho_pio(apagado, 0, pio, 0, 0.0, 0.0, 0.1);
+
   char c;
 
   while (true)
