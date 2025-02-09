@@ -1,6 +1,6 @@
 # EmbarcaTechContadorMatrizDeLed
 
-**Video do funcionamento:**
+**Video do funcionamento:** https://youtu.be/Zkxr60mVXKw
 
 Projeto desenvolvido durante a primeira fase da residência Embarcatech.
 
