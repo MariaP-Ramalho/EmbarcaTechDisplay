@@ -63,6 +63,7 @@ int main()
   }
 }
 
+//callback da interrupção
 void gpio_irq_handler(uint gpio, uint32_t events)
 {
   static absolute_time_t last_time = {0}; // Garante que a variável mantenha seu valor entre chamadas
@@ -70,14 +71,17 @@ void gpio_irq_handler(uint gpio, uint32_t events)
 
   // Calcula a diferença de tempo em microsegundos
   int64_t diff = absolute_time_diff_us(last_time, current_time);
+  printf("...\n");
 
   if (diff > 250000) // 250ms
   {
     if (!gpio_get(button_a) || !gpio_get(button_b)) // Verifica se ainda está pressionado
     {
+      printf("...\n");
 
       if (gpio == button_a)
       {
+        printf("...\n");
         led_state_g = !led_state_g;   // Inverte o estado
         gpio_put(led_g, led_state_g); // Atualiza o LED
 
@@ -88,6 +92,7 @@ void gpio_irq_handler(uint gpio, uint32_t events)
       }
       else if (gpio == button_b)
       {
+        printf("...\n");
         led_state_b = !led_state_b;   // Inverte o estado
         gpio_put(led_b, led_state_b); // Atualiza o LED
 
@@ -101,6 +106,7 @@ void gpio_irq_handler(uint gpio, uint32_t events)
   }
 }
 
+//Atualiza o display
 void alterar_display()
 {
   bool cor = true;
@@ -114,6 +120,7 @@ void alterar_display()
   ssd1306_send_data(&ssd);
 }
 
+//Inicializa os perifericos
 void init_hardware()
 {
   stdio_init_all();
