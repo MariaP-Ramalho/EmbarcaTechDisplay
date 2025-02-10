@@ -1,4 +1,4 @@
-# EmbarcaTechContadorMatrizDeLed
+# Embarca Tech Display SSD2306
 
 **Video do funcionamento:** https://youtu.be/Zkxr60mVXKw
 
