@@ -1,4 +1,4 @@
-# Embarca Tech Display SSD2306
+# Embarca Tech Display SSD1306
 
 **Video do funcionamento:** https://youtu.be/Zkxr60mVXKw
 
